@@ -1,0 +1,72 @@
+.sidebar {
+    float: left;
+    width: 240px;
+    height: 90%;
+    position: fixed;
+    top: 89px;
+    overflow:scroll;
+}
+.sidecontent{
+    background-color: #f5f5f5;
+    padding: 10px 0 0 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+.sidenav,.sidenav-circle  {
+border-bottom: 1px solid #dcdcdc;
+overflow: hidden;
+}
+.sidenav ul,.sidenav-circle ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 0px 10px 0px;
+  width: 100%;
+}
+.sidenav li a,.sidenav-circle li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.sidecontent h1 {
+    text-transform: uppercase;
+color:#606060;
+padding: 17px 0 0 28px;
+font-size:14px;
+
+}
+.sidenav h3, p {
+/*padding: 7%;*/
+}
+.sidenav i {
+color: #909090;
+padding: 0 11% 0 8%;
+}
+.fa-plus-circle{
+    opacity: 0.5;
+}
+.sidenav-circle i {
+background-color: #3f3f3f;
+color:#fff;
+ border-radius: 50%;
+ border: 1x solid grey;
+padding: 5px;
+margin: 0px 9% 0px 5%;
+}
+.showBtn,.showBtn:hover{
+   background-color:transparent;
+   background-image:none;
+   color:#000;
+   float: left;
+position: fixed;
+top: 52px;
+left: 32px;
+z-index: 1000;
+border: none;
+}
+/* Change the link color on hover */
+.sidenav li a:hover,.sidenav-circle li a:hover {
+  background-color: #dcdcdc;
+}

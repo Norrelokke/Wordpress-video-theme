@@ -1,0 +1,217 @@
+/*
+Theme Name: videotheme
+Theme URI: http://localhost/wordpress/
+Author: Mikaela Norrelokke
+Author URI: http://localhost/wordpress/
+Description: custom theme
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://localhost/wordpress/
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.site-header {
+    position: fixed;
+    background-color: #fff;
+    height: 56px;
+    top: 33px;
+    width:100%;
+}
+.site-header:after {
+    bottom: -5px;
+    box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, .06);
+    content: "";
+    height: 5px;
+    left: 0px;
+    opacity: 1;
+    pointer-events: none;
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    z-index: 2050;
+}
+
+.site-footer {
+    display: none;
+}
+.section-header {
+    margin-top: 16px;
+}
+
+.main-nav-container a {
+    height: 25px;
+    width: 25px;
+    display: block;
+    position: relative;
+    left: -38px;
+}
+.main-nav-container  {
+width: 91%;
+height: 56px;
+left: 7%;
+position: fixed;
+top: 49px;
+  }
+.main-nav {
+    float: right;
+    list-style-type:none;
+    position:relative;
+    top: -55px;
+}
+.main-nav li{
+  padding: 0px 18px 23px 14px;
+  display:inline-block;
+}
+
+/*search */
+.header-search .search-input, .header-search .search-input:focus {
+    width: 85%;
+    border: 1px solid #CCC;
+    height: 29px;
+    background-color: #fff;
+    border: 1px solid #CCC;
+    border-right: none;
+    box-shadow: inset 0 1px 2px #CCC;
+    padding: 2px 6px;
+    border-radius: 2px 0 0 2px;
+}
+.header-search{
+width:30%;
+margin: -30px auto;
+}
+.header-search .search-submit{
+    height: 29px;
+  cursor: pointer;
+  width: 65px;
+  border: 1px solid #CCC;
+  background-color: #f5f5f5;
+  border-radius: 0 2px 2px 0;
+  margin: 1px 0px 0px -4px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.10);
+}
+
+
+.icon1,.icon2,.icon3,.icon4 {
+  background-repeat:no-repeat;
+  background-position:left;
+  padding-left:5px;
+}
+.icon1{
+  background-size: 21px 12px;
+  background-image: url(http://localhost/wordpress/wp-content/uploads/2019/03/icon1.png);
+}
+.icon2{
+    background-size: 21px 20px;
+    background-image: url(http://localhost/wordpress/wp-content/uploads/2019/03/icon2.png);
+}
+.icon3{
+    background-size: 21px 19px;
+    background-image: url(http://localhost/wordpress/wp-content/uploads/2019/03/icon3.png);
+}
+.icon4{
+    background-size: 7px 21px;
+    background-image: url(http://localhost/wordpress/wp-content/uploads/2019/03/icon4.png);
+}
+.icon5 a{
+  color:#065fdb;
+  font-size:14px;
+   text-decoration:none;
+   width: 75px;
+     padding-left:5px;
+}
+
+.content-block .hentry{
+  width: 211px;
+  height: 221px;
+  border-radius: 0px;
+  margin:0 4px 0 0;
+}
+
+/*posts*/
+.post{
+  position: relative;
+  top: 35px;
+  left: 15%;
+z-index:3000;
+width: 70%;
+}
+.post ul{
+  display: inline-block;
+  padding: 3px;
+}
+.post li{
+  list-style-type:none;
+}
+.post a{
+z-index:4000;
+text-decoration:none;
+color:#000;
+}
+.entry-content h1{
+font-size:12px;
+}
+
+.entry-content li{
+width:100%;
+}
+/*headcontent*/
+.headcontent {
+position: relative;
+left: 15%;
+width: 1288px;
+margin: 23px 0px 0px 3px;
+height: 337px;
+z-index: -1000;
+}
+.image {
+float: right;
+height: 99%;
+}
+.image p{
+padding:0;
+}
+.embed-container{
+  position: relative;
+  width: 66%;
+  float: left;
+  top: 34px;
+}
+.embed-container iframe{
+  width: 101%;
+  height: 89%;
+}
+.main-container{
+  position: absolute;
+  top: 156px;
+  left: 20%;
+}
+.main-container iframe{
+width: 960px;
+height:540px;
+}
+
+.main-news{
+  position: relative;
+  left: 15%;
+  width: 1277px;
+  margin: 23px 0px 0px 3px;
+  height: 300px;
+  z-index: -1000;
+  top: -22px;
+}
+.newshead{
+  background-color: #f5f5f5;
+  height: 11%;
+  text-align: center;
+  font-size: 26px;
+  padding: 19px;
+  position: relative;
+  left: 15%;
+  width: 1277px;
+  margin: 97px 0px 0px 0px;
+  height: 68px;
+  z-index: -1000;
+}
