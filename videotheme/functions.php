@@ -1,21 +1,21 @@
 <?php
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-function theme_enqueue_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style',  get_stylesheet_directory_uri() . '/style.css',
-        array('parent-style')    );
-    wp_enqueue_style( 'my-style', get_stylesheet_directory_uri() . '/side.css' );
+      add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+            function theme_enqueue_styles() {
+                wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+                wp_enqueue_style( 'child-style',  get_stylesheet_directory_uri() . '/style.css',
+                array('parent-style')    );
+                wp_enqueue_style( 'my-style', get_stylesheet_directory_uri() . '/side.css' );
 
-}
-add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
-function enqueue_load_fa() {
-wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
-}
+                                            }
+        add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+            function enqueue_load_fa() {
+                wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+                                       }
 
-function create_posttype() {
-register_post_type( 'videos',
+              function create_posttype() {
+                register_post_type( 'videos',
 // CPT Options
-array(
+                array(
   'labels' => array(
    'name' => __( 'videos' ),
    'singular_name' => __( 'Videos' )
@@ -99,4 +99,5 @@ function taxonomy() {
 register_nav_menus( array(
         'primary' => __( 'Primary Menu', 'videotheme' ),
     ) );
+
 ?>
