@@ -13,7 +13,7 @@
     font-style: normal;
     font-weight: 500;
 }
-.sidenav,.sidenav-circle  {
+.sidenav,.sidenav-circle,.newsnav-circle  {
   border-bottom: 1px solid #dcdcdc;
   overflow: hidden;
 }
