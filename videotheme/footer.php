@@ -8,7 +8,7 @@
 					wp_nav_menu( $arg = array (
 						'menu_class' => 'foot-nav',
 						'theme_location' => 'footer'
-											));
+											  ));
 			?>
 		</nav>
 	</footer>
